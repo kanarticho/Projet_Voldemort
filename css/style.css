@@ -18,14 +18,18 @@
 	--color-fond-dark:#090d0c;
 	--color-name:#7aac87;
 	--color-titre:#d3fedc;
-  --color-text:#f1fef6;
+    --color-text:#f1fef6;
+    --little_screen:870px;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: var(--color-fond-dark);
     color: var(--color-text);
     margin: 0;
+}
+body{
+    background-image: url('../images/fd.jpg');
+
 }
 
 h1{
@@ -38,6 +42,15 @@ h2{
    font-family: 'Roboto', sans-serif;
 	 color: var(--color-titre);
 	 border-bottom: 3px solid var(--color-name);
+<<<<<<< HEAD
 	 width: 50%;
     }
 
+=======
+	 width: 100%;
+}
+.fd_bright{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+>>>>>>> main
