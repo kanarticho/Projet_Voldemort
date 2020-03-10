@@ -18,7 +18,8 @@
 	--color-fond-dark:#090d0c;
 	--color-name:#7aac87;
 	--color-titre:#d3fedc;
-  --color-text:#f1fef6;
+    --color-text:#f1fef6;
+    --little_screen:870px;
 }
 
 body {
@@ -43,9 +44,6 @@ h2{
 	 width: 100%;
 }
 .fd_bright{
-    position: absolute;
     width: 100%;
-    height: 200%;
-    background-color: black;
-    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.288);
 }
