@@ -10,3 +10,19 @@
     width: 100%;
     align-content: center;
 }
+#m_main{
+    border-style: solid;
+    border-color: red;
+    width: 100%;
+    display: flex;
+    justify-items: baseline;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.m_bloc{
+    border-color: var(--color-titre);
+    border-style: solid;
+    margin: 15px;
+    min-width: 250px;
+
+}
