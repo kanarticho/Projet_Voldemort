@@ -14,11 +14,14 @@
 @import 'section_2_3.css';
 @import 'footer.css';
 
-*{
+:root {
 	--color-fond-dark:#090d0c;
 	--color-name:#7aac87;
 	--color-titre:#d3fedc;
-    --color-text:#f1fef6;
+  --color-text:#f1fef6;
+}
+
+body {
     font-family: 'Lato', sans-serif;
     background-color: var(--color-fond-dark);
     color: var(--color-text);
@@ -26,8 +29,13 @@
 
 h1{
     font-family: 'Viaoda Libre', cursive;
+		color: var(--color-name);
+		font-size: 50pt;
 }
 
 h2{
    font-family: 'Roboto', sans-serif;
+	 color: var(--color-titre);
+	 border-bottom: 3px solid var(--color-name);
+	 width: 50%;
 }
