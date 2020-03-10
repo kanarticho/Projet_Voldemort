@@ -1,6 +1,65 @@
 @import "style.css";
 
+body {
+  background-color: var(--color-fond-dark);
+}
+
+h1 {
+  color: var(--color-name);
+  font-size: 50pt;
+}
+
+h2 {
+  color: var(--color-titre);
+  border-bottom: 3px solid var(--color-name);
+  width: 50%;
+}
+
 #intro {
   display: flex;
-  justify-content: space-between;
+  
+}
+
+.nom {
+  text-align: center;
+}
+
+.nom img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.coord-logo,
+.lien-logo {
+  display: flex;
+
+}
+
+.coord-logo p,
+.lien-logo a {
+  color: var(--color-text);
+}
+
+.lien-logo a {
+  text-decoration: none;
+}
+
+.lien-logo a:hover {
+  text-decoration: underline;
+}
+
+.coord-logo img,
+.lien-logo img {
+  filter: invert();
+}
+
+.lien-logo img {
+  width: 8%;
+}
+
+.coord-logo img {
+  width: 6%;
 }
