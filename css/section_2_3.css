@@ -1,0 +1,12 @@
+#intro {
+    width: 90%;
+    margin: auto;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: var(--color-titre);
+    padding: 15px;
+}
+.introduction{
+    width: 100%;
+    align-content: center;
+}
