@@ -18,7 +18,10 @@
 	--color-fond-dark:#090d0c;
 	--color-name:#7aac87;
 	--color-titre:#d3fedc;
-	--color-text:#f1fef6;
+    --color-text:#f1fef6;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--color-fond-dark);
+    color: var(--color-text);
 }
 
 h1{
@@ -27,7 +30,4 @@ h1{
 
 h2{
    font-family: 'Roboto', sans-serif;
-}
-p{
-    font-family: 'Lato', sans-serif;
 }
