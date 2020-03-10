@@ -10,3 +10,23 @@
     width: 100%;
     align-content: center;
 }
+#m_main{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-items: baseline;
+    flex-wrap: wrap;
+}
+.m_bloc{
+    margin right: 30px;
+}
+.m_bloc1{
+    width: 45%;
+}
+.m_bloc2{
+    width: 45%;
+}
+label {
+    padding-right: 10px;
+    font-size: 1rem;
+}
