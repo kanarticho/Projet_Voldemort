@@ -5,22 +5,25 @@
     border-width: 2px;
     border-color: var(--color-titre);
     padding: 15px;
+    text-align: justify ;
 }
-.introduction{
+.m_introduction{
     width: 100%;
     align-content: center;
 }
 #m_main{
+    margin: auto;
     width: 90%;
     display: flex;
-    align-items: center;
-    justify-items: baseline;
     flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: initial;
 }
 .m_bloc{
-    margin right: 30px;
+    margin: calc(8% / 4);
 }
 .m_bloc1{
+    text-align: right;
     width: 45%;
 }
 .m_bloc2{
