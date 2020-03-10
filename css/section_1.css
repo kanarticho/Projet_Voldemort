@@ -2,20 +2,9 @@
 
 
 
-h1 {
-  color: var(--color-name);
-  font-size: 50pt;
-}
-
-h2 {
-  color: var(--color-titre);
-  border-bottom: 3px solid var(--color-name);
-  width: 50%;
-}
-
-#intro {
+#i_intro {
   display: flex;
-  
+
 }
 
 .nom {
