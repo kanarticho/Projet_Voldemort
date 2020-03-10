@@ -5,24 +5,28 @@
     border-width: 2px;
     border-color: var(--color-titre);
     padding: 15px;
+    text-align: justify ;
 }
-.introduction{
+.m_introduction{
     width: 100%;
     align-content: center;
 }
 #m_main{
-    border-style: solid;
-    border-color: red;
-    width: 100%;
+    margin: auto;
+    width: 90%;
     display: flex;
-    justify-items: baseline;
-    align-content: space-around;
     flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: initial;
 }
 .m_bloc{
-    border-color: var(--color-titre);
-    border-style: solid;
-    margin: 15px;
-    min-width: 250px;
+    margin: calc(8% / 4);
+}
+.m_bloc1{
+    text-align: right;
+    width: 45%;
+}
 
+.m_bloc2{
+    width: 45%;
 }
