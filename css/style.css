@@ -50,12 +50,12 @@ body {
 body{
     background-image: url('../images/fd.jpg');
 		background-attachment: fixed;
-		/*background-color: var(--color-fond-dark);*/
 }
 
 h1 {
 		font-size: 50pt;
 		font-family: 'Cinzel Decorative', cursive;
+		text-transform: uppercase;
 }
 
 h2{
