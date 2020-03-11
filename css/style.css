@@ -28,7 +28,9 @@
 	--color-fond-dark:#090d0c;
 	--color-name:#7aac87;
 	--color-titre:#d3fedc;
-  --color-text:#f1fef6;
+  	--color-text:#f1fef6;
+
+	--text_content_size:25px;
 
 	--padding-sm: calc(var(--padding) / 2);
 	--padding: 16px;
@@ -40,7 +42,6 @@
 
     --little_screen:870px;
 }
-
 body {
     font-family: 'Lato', sans-serif;
     color: var(--color-text);
@@ -49,15 +50,13 @@ body {
 }
 body{
     background-image: url('../images/fd.jpg');
-		background-attachment: fixed;
-		/*background-color: var(--color-fond-dark);*/
+	background-attachment: fixed;
+	/*background-color: var(--color-fond-dark);*/
 }
-
 h1 {
 		font-size: 50pt;
 		font-family: 'Cinzel Decorative', cursive;
 }
-
 h2{
    font-family: 'Cinzel Decorative', cursive;
 	 color: var(--color-text);
@@ -65,8 +64,10 @@ h2{
 	 text-transform: uppercase;
 	 width: 100%;
     }
-
 .fd_bright{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.288);
+}
+#m_main, .m_introduction{
+	font-size: var(--text_content_size);
 }
