@@ -1,51 +1,119 @@
 @import "style.css";
 
+/*body {
+  background-image: url("../images/pattern01.png");
+}*/
 
 #i_intro {
   display: flex;
+  justify-content: space-around;
+  font-size: 14pt;
+  /*background-image: url("../images/vol.png");
+  background-size: cover;
+  background-position: right;*/
+}
 
+.coord {
+  margin-left: var(--margin);
+  padding-top: var(--margin);
+}
+
+.liens {
+  margin-right: calc(var(--margin-lg) * 1.5);
+  padding-top: var(--margin);
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  text-align: right;
 }
 
 .nom {
   text-align: center;
+  width: 40%;
+  padding: var(--padding-lg);
+  padding-left: 0;
 }
 
 .nom img {
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
+  /*filter: grayscale();*/
 }
 
-.coord-logo,
-.lien-logo {
+.list-address {
+  list-style: none;
+  padding: 0;
+}
+
+.coord-logo {
   display: flex;
-
 }
 
-.coord-logo p,
-.lien-logo a {
-  color: var(--color-text);
-}
-
-.lien-logo a {
-  text-decoration: none;
-}
-
-.lien-logo a:hover {
-  text-decoration: underline;
-}
-
-.coord-logo img,
-.lien-logo img {
+.liens img,
+.coord-logo img {
+  width: 50px;
   filter: invert();
+  padding: var(--padding);
 }
 
-.lien-logo img {
-  width: 8%;
+.liens img {
+  padding-bottom: 0;
+  padding-right: 0;
 }
 
 .coord-logo img {
-  width: 6%;
+  padding-left: 0;
+}
+
+.i_twitter div {
+}
+
+@media screen and (max-width: 1000px) {
+  .coord,
+  .liens {
+    font-size: 14pt;
+  }
+  .nom img {
+    width: 300px;
+    height: 300px;
+  }
+  .nom h1 {
+    font-size: 30pt;
+  }
+  .coord {
+    margin-left: var(--margin-sm);
+  }
+  .liens img,
+  .coord-logo img {
+    width: 30px;
+    padding: var(--padding-sm);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .nom h1 {
+    font-size: 20pt;
+  }
+  .liens {
+    display: none;
+  }
+  #i_intro {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .nom {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .nom img {
+
+  }
+  .coord h2 {
+    margin-top: 0;
+  }
+
 }

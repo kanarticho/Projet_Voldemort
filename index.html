@@ -12,17 +12,20 @@
 	<!--NavBar-->
 
 	<header>
-		<nav>
-			<ul id="navbar">
-				<li><a href="" title="">Compétences</a></li>
-				<li><a href="" title="">Expériences</a></li>
-				<li><a href="" title="">Formation</a></li>
-				<li><a href="" title="">Hobbies</a></li>
-				<li><a href="" title="">Contact</a></li>
-			</ul>
+
+		<nav class="navbar" >
+			<div id="liens">
+				<a class ="nav_liens" href="#">Compétences</a>
+        <a class ="nav_liens" href="#">Expériences</a>
+        <a class ="nav_liens" href="#">Formation</a>
+				<a class ="nav_liens" href="#">Hobbies</a>
+				<a class ="nav_liens" href="#">Contact</a>
+			</div>
+			<a class="menu_burger" href="#liens">Menu</a>
 		</nav>
+
 	</header>
-	<div class="fd_bright"></div>
+	<div class="fd_bright">
 	 <main>
 		<!--
 	Cordonnées / photos / liens
@@ -32,8 +35,10 @@
 				<h2>Coordonnées</h2>
 				<div class="coord-logo">
 					<img src="images/address.svg" alt="logo-address">
-					<p>Lorem ipsum blablabla</p>
-					<p>truc truc truc</p>
+					<ul class="list-address">
+						<li>4, Privet </li>
+						<li>Godric's Hollow</li>
+					</ul>
 				</div>
 				<div class="coord-logo">
 					<img src="images/phone.svg" alt="logo-tel">
@@ -41,33 +46,24 @@
 				</div>
 				<div class="coord-logo">
 					<img src="images/mail.svg" alt="logo-mail">
-					<p>celui-dont-on-ne-doit-pas-prononcer-le-nom@laposte.net</p>
+					<p>vous-savez-qui@laposte.net</p>
 				</div>
 			</div>
 
 			<div class="nom">
-				<img src="images/lord-voldemort.jpg" alt="photo">
-				<h1>Tom Jedusor</h1>
+					<img src="images/lord-voldemort.jpg" alt="photo">
+					<h1>Tom Elvis Jedusor</h1>
 			</div>
 
 			<div class="liens">
 				<h2>Liens</h2>
-				<div class="lien-logo">
-					<img src="images/twitter.svg" alt="logo-twitter">
-					<a href="#">Twitter</a>
+				<div class="i_twitter">
+					<p>@the_dark_lord</p>
+					<a href="#"><img src="images/twitter.svg" alt="logo-twitter"></a>
 				</div>
-				<div class="lien-logo">
-					<img src="images/linkedin.svg" alt="">
-					<a href="#">LinkedIn</a>
-				</div>
-				<div class="lien-logo">
-					<img src="images/instagram.svg" alt="insta">
-					<a href="#">Instagram</a>
-				</div>
-				<div class="lien-logo">
-					<img src="images/youtube.svg" alt="youtube">
-					<a href="#">YouTube</a>
-				</div>
+					<a href="#"><img src="images/linkedin.svg" alt=""></a>
+					<a href="#"><img src="images/instagram.svg" alt="insta"></a>
+					<a href="#"><img src="images/youtube.svg" alt="youtube"></a>
 			</div>
 		</section>
 
@@ -115,7 +111,7 @@
 			</div>
 		</section>
 		</main>
-
+</div>
 	<!--Formulaire de contact-->
 
 	<footer>

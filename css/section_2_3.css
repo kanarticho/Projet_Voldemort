@@ -17,16 +17,24 @@
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    flex-direction: initial;
+}
+li{
+    list-style: none;
 }
 .m_bloc{
     margin: calc(8% / 4);
 }
+
 .m_bloc1{
     text-align: right;
     width: 45%;
 }
-
 .m_bloc2{
     width: 45%;
+}
+ @media (max-width: 870px) {
+
+    .m_bloc{
+        width: 90%;
+    }
 }
