@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto|Viaoda+Libre&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
-
- /*
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Mountains+of+Christmas|Spectral+SC|UnifrakturMaguntia&display=swap');
+/*
     font-family: 'Roboto', sans-serif;
 
     font-family: 'Lato', sans-serif;
 
     font-family: 'Viaoda Libre', cursive;
 
+
+
+
+    font-family: 'UnifrakturMaguntia', cursive;
+
+    font-family: 'Spectral SC', serif;
+
+    font-family: 'Mountains of Christmas', cursive;
+
+    font-family: 'Cinzel Decorative', cursive;
 
 */
 @import 'header.css';
@@ -40,17 +49,19 @@ body {
 }
 body{
     background-image: url('../images/fd.jpg');
+		background-attachment: fixed;
 }
 
 h1 {
 		font-size: 50pt;
-		font-family: 'Anton', sans-serif;
+		font-family: 'Cinzel Decorative', cursive;
+		text-transform: uppercase;
 }
 
 h2{
-   font-family: 'Roboto', sans-serif;
-	 color: var(--color-titre);
-	 border-bottom: 3px solid var(--color-name);
+   font-family: 'Cinzel Decorative', cursive;
+	 color: var(--color-text);
+	 border-bottom: 5px solid var(--color-name);
 	 text-transform: uppercase;
 	 width: 100%;
     }
