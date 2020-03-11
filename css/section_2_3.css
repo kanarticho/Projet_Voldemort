@@ -36,7 +36,20 @@ label {
     padding-right: 10px;
     font-size: 1rem;
 }
-
+.poudlard{
+    opacity: 0.2;
+    filter: invert();
+}
+.panneau{
+    opacity: 0.1;
+    filter: invert();
+}
+.m_formation_container{
+    position: relative;
+    top: 10%;
+    left: 20%; 
+    right: 0;
+}
 @media screen and (max-width: 870px){
 
     .m_bloc{
