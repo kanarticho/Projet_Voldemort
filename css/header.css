@@ -1,4 +1,5 @@
 .navbar{
+<<<<<<< HEAD
     background: linear-gradient( #7aac87, #090d0c);
     color:var(--color-fond-dark);
     height: 70px;
@@ -46,8 +47,77 @@ a {
     .menu_burger {
         display: block;
 
+=======
+    
+    
+    color: var(--color-text);
+    height: 70px;
+    background:rgba(0, 0, 0, 0.562);
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    position: fixed;
+    
+}
+
+    .menu_burger {
+        display: none;
+    }
+#liens_h{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background:rgba(0, 0, 0, 0.562);
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text) ;
+    display: inline-block;
+    justify-content: space-around;
+    margin: 15px 35px;
+}
+
+a:hover{
+    color: rgba(222, 235, 165, 0.541);
+}
+
+@media screen and (max-width: 870px){
+    #liens_h {
+        display: none;
+    }
+    #liens_h:target{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: fixe;
+        height: 100%;
+        width: 25%;
+        background: rgba(0, 0, 0, 0.562);
+   
+
+    }
+     .nav_liens{
+        color: var(--color-text);  
+        text-align: center;
+    
+
+     }
+
+    .menu_burger {
+        display: block;
+        font-size: 35px;
+
+>>>>>>> 9a0c665283ab53e5befd624314c0cb09d27d86de
     }
     .navbar{
         justify-content: right;
     }
+<<<<<<< HEAD
+=======
+
+    
+>>>>>>> 9a0c665283ab53e5befd624314c0cb09d27d86de
 }
