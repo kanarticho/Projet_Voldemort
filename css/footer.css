@@ -1,13 +1,19 @@
 footer{
     position: relative;
+    background:#00000080;
+    width: 100%;
+    margin:0;
+    padding:0;
 }
 .formulaire{
     display: flex;
     align-self: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 16%;
+    opacity: 0.4;
 }
-#contact{
+.contact{
     text-align: center;
 }
 input[type=search] {
@@ -15,53 +21,47 @@ input[type=search] {
         -webkit-appearance: none;
 }
 input, textarea, select, button {
-        width : 50%;
+        width : 25%;
         margin: 0;
         box-sizing: border-box;
         margin:auto;
  }
-<<<<<<< HEAD
-textarea{
-=======
  textarea{
->>>>>>> 666d4678ac921d76c7eee178985a6ac4d87fc707
     margin-bottom: 16px;
 }
-#img_contact{
-    height: 50%;
-    width: 50%;
-    align-items: center;
-    padding:2% 25% ;
+.img_contact{
+    height: 30%;
+    width: 30%;
+    align-items: bottom;
+    padding:2% 37% ;
 }
-#button{
+.button{
     margin-bottom: 30px;
 }
-#fond_footer{
+.fond_footer{
     position: absolute;
     width: 100%;
     margin: 0;
     top: 0;
-    opacity: 0.5;
-<<<<<<< HEAD
-    /*position: absolute;*/
-/*top: 0; left: 0; right: 0; bottom: 20;*/
-=======
->>>>>>> 666d4678ac921d76c7eee178985a6ac4d87fc707
+    
 }
-#img_fd_footer{
+.img_fd_footer{
     filter: invert();
     width: 100%;
 }
-#content_footer{
+.content_footer{
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 2;
 }
-<<<<<<< HEAD
-
-=======
-#content_footer h2{
+.content_footer h2{
 	 border-bottom: none;
 }
->>>>>>> 666d4678ac921d76c7eee178985a6ac4d87fc707
+.parchemin{
+    position: relative;
+    text-align: center;
+    padding-top: 2%;
+    opacity: none;
+    z-index: 2;
+}
