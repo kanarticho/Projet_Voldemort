@@ -1,11 +1,54 @@
+footer{
+    position: relative;
+}
 .formulaire{
     display: flex;
-    flex-direction: column;
+    align-self: center;
     align-items: center;
-     ;
+    flex-direction: column;
 }
-
-#contact {
+#contact{
     text-align: center;
 }
-
+input[type=search] {
+        border: 1px dotted #999;
+        -webkit-appearance: none;
+}
+input, textarea, select, button {
+        width : 50%;
+        margin: 0;
+        box-sizing: border-box;
+        margin:auto;
+ }
+ textarea{
+    margin-bottom: 16px;
+}
+#img_contact{
+    height: 50%;
+    width: 50%;
+    align-items: center;
+    padding:2% 25% ;
+}
+#button{
+    margin-bottom: 30px;
+}
+#fond_footer{
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    opacity: 0.5;
+}
+#img_fd_footer{
+    filter: invert();
+    width: 100%;
+}
+#content_footer{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+#content_footer h2{
+	 border-bottom: none;
+}

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="css/W3S.css">
+	<link rel="stylesheet" href="css/W3S_plus.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Curriculum Vitae</title>
 </head>
@@ -14,31 +14,29 @@
 	<!--NavBar-->
 
 	<header>
-
-		<nav class="navbar" >
-			<div id="liens">
-				<a class ="nav_liens" href="#">Compétences</a>
-            	<a class ="nav_liens" href="#">Expériences</a>
-            	<a class ="nav_liens" href="#">Formation</a>
-				<a class ="nav_liens" href="#">Hobbies</a>
-				<a class ="nav_liens" href="#">Contact</a>
-</div>
-			<a class="menu_burger" href="#liens">Menu</a>
+		<nav class="navbar">
+			<div id="liens_h">
+				<a class="nav_liens" href="#comp">Compétences</a>
+				<a class="nav_liens" href="#exp">Expériences</a>
+				<a class="nav_liens" href="#format">Formation</a>
+				<a class="nav_liens" href="#hobbs">Hobbies</a>
+				<a class="nav_liens" href="#contact">Contact</a>
+			</div>
+			<a class="menu_burger" href="#liens_h">☰</a>
 		</nav>
 
 	</header>
-	<div class="fd_bright">
-	 <main>
-		<!--
-	Cordonnées / photos / liens
--->
+	<!--<div class="fd_bright">-->
+	<main>
+		<!--	Cordonnées / photos / liens	-->
+
 		<section id="i_intro">
 			<div class="coord">
 				<h2>Coordonnées</h2>
 				<div class="coord-logo">
 					<img src="images/address.svg" alt="logo-address">
 					<ul class="list-address">
-						<li>4, Privet </li>
+						<li>4, Privet Drive</li>
 						<li>Godric's Hollow</li>
 					</ul>
 				</div>
@@ -51,18 +49,33 @@
 					<p>vous-savez-qui@laposte.net</p>
 				</div>
 			</div>
-
 			<div class="nom">
-					<img src="images/lord-voldemort.jpg" alt="photo">
-					<h1>Tom Elvis Jedusor</h1>
+				<img src="images/lord-voldemort.jpg" alt="photo">
+				<h1>Tom Elvis Jedusor</h1>
 			</div>
 
 			<div class="liens">
 				<h2>Liens</h2>
-					<a href="#"><img src="images/twitter.svg" alt="logo-twitter"></a>
-					<a href="#"><img src="images/linkedin.svg" alt=""></a>
-					<a href="#"><img src="images/instagram.svg" alt="insta"></a>
-					<a href="#"><img src="images/youtube.svg" alt="youtube"></a>
+				<div class="i_liens">
+					<p>@the_dark_lord</p>
+					<a class="i_nothover" href="#"><img src="images/twitter.svg" alt="logo-twitter"></a>
+					<a class="i_hover" href="#"><img src="images/twitter-color.svg" alt="logo-color"></a>
+				</div>
+				<div class="i_liens">
+					<p>Tom Jedusor</p>
+					<a class="i_nothover" href="#"><img src="images/linkedin.svg" alt=""></a>
+					<a class="i_hover" href="#"><img src="images/linkedin-color.svg" alt="logo-color"></a>
+				</div>
+				<div class="i_liens">
+					<p>@tomtom_sans_nana</p>
+					<a class="i_nothover" href="#"><img src="images/instagram.svg" alt="insta"></a>
+					<a class="i_hover" href="#"><img src="images/insta-color.svg" alt="logo-color"></a>
+				</div>
+				<div class="i_liens">
+					<p>Les tutos magie de Tom</p>
+					<a class="i_nothover" href="#"><img src="images/youtube.svg" alt="youtube"></a>
+					<a class="i_hover" href="#"><img src="images/youtube-color.svg" alt="logo-color"></a>
+				</div>
 			</div>
 		</section>
 
@@ -76,76 +89,138 @@
 		</section>
 		<!--Compétences, Expérience, Formation, Hobbies-->
 		<section id="m_main">
-			<div class="m_bloc m_bloc2">
-				<h2>Compétences</h2>
-				<ul>
-					<li>Organisation d'atelier avec les enfants.</li>
-					<div class="w3-round">
-						<div class="w3-container w3-green w3-round-xlarge" style="width:25%">25%</div>
-					  </div>
-					<li>Conscienceux et impliqué dans son tavail</li>
-					<div class="w3-round">
-						<div class="w3-container w3-green w3-round-xlarge" style="width:100%">100%</div>
-					  </div>
-					<li>Capacité à séparer son âme en plusieurs parties</li>
-					<div class="w3-round">
-						<div class="w3-container w3-green w3-round-xlarge" style="width:80%">80%</div>
-					  </div>
-					<li>Travail en équipe</li>
-					<div class="w3-round">
-						<div class="w3-container w3-green w3-round-xlarge" style="width:95%">95%</div>
-					  </div>
-					<li>Savoir identifier les besoins de l'enfant</li>
-					<div class="w3-round">
-						<div class="w3-container w3-green w3-round-xlarge" style="width:15%">15%</div>
-					  </div>
-				</ul>
+			<div id="comp" class="m_bloc">
+				<div class="m_bloc_title">
+					<h2>Compétences</h2>
+				</div>
+				<div class="m_bloc_content">
+					<ul>
+						<li>Organisation d'atelier avec les enfants.</li>
+						<div class=" w3-round">
+							<div class="w3-container w3-green w3-round-xlarge" style="width:25%">25%</div>
+						</div>
+						<li>Conscienceux et impliqué dans son tavail</li>
+						<div class="w3-round">
+							<div class="w3-container w3-green w3-round-xlarge" style="width:100%">100%</div>
+						</div>
+						<li>Capacité à séparer son âme en plusieurs parties</li>
+						<div class="w3-round">
+							<div class="w3-container w3-green w3-round-xlarge" style="width:80%">80%</div>
+						</div>
+						<li>Travail en équipe</li>
+						<div class="w3-round">
+							<div class="w3-container w3-green w3-round-xlarge" style="width:95%">95%</div>
+						</div>
+						<li>Savoir identifier les besoins de l'enfant</li>
+						<div class="w3-round">
+							<div class="w3-container w3-green w3-round-xlarge" style="width:15%">15%</div>
+						</div>
+					</ul>
+				</div>
 			</div>
 
 			<div class="m_bloc m_bloc1">
-				<h2>Expériences</h2>
+				<div class="m_bloc_title">
+					<h2>Expériences</h2>
+				</div>
 				<ul>
 					<li>Vendeur chez Barjow et Beurk: 1944 à 1946</li>
 					<li>CEO des Mangemorts en Auto entrepreneur: 1946 à 2018</li>
-					<li>Stage au Relais des assistantes maternelles «les Quatre saisons»: Septembre 2019 à Décembre 2019
-					</li>
+					<li>Stage au Relais des assistantes maternelles «les Quatre saisons»: Septembre 2019 à Décembre
+						2019</li>
 				</ul>
-				
+				<div class="m_cont_img">
+					<div class="m_ss_titre_vignettes"><em>Ils m'ont fait confiance pour du baby-sitting !</em></div>
+					<div class="m_vignettes">
+						<div class="cadre">
+							<figure>
+								<img src="images/kim.jpg" alt="Kimmy" />
+								<figcaption>"Un p'tit gars sérieux !"</figcaption>
+							</figure>
+						</div>
+						<div class="cadre">
+							<figure>
+								<img src="images/cyril.jpeg" alt="La Nouilla" />
+								<figcaption>"Mon p'tit Vovol ? Il est génial !"</figcaption>
+							</figure>
+						</div>
+						<div class="cadre">
+							<figure>
+								<img src="images/loky.png" alt="Lock" />
+								<figcaption>"Je lui confierai ma mère !"</figcaption>
+							</fibaguette magiquere>
+								<img src="images/louis.jpeg" alt="Loulou la Moustache" />
+								<figcaption>"Formé par Dumbledore, c'est vous dire !"</figcaption>
+							</figure>
+						</div>
+						<div class="cadre">
+							<figure>
+								<img src="images/sauron.jpg" alt="de serviette" />
+								<figcaption>"Je lui confierai les clés du kangoo sans hésiter !"</figcaption>
+							</figure>
+						</div>
+						<div class="cadre">
+							<figure>
+								<img src="images/pol_pot.jpg" alt="de chambre" />
+								<figcaption>"Les enfants adorent jouer avec sa baguette !"</figcaption>
+							</figure></a>
+						</div>
+						<div class="cadre">
+							<figure>
+								<img src="images/joker.jpg" alt="pur jus" />
+								<figcaption>"Il amuse les petits"</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="m_bloc m_bloc2">
-				<h2>Formation</h2>
+			<div class="m_bloc">
+				<div class="m_bloc_title">
+					<h2>Formation</h2>
+				</div>
 				<ul>
 					<li>Diplômé de la prestigieuse école de Poudlard: 1937 à 1944</li>
 					<li>Formation en autodidact de magie noire: 1944 à 1950</li>
 					<li>CAP petite enfance: 2019 à 2020</li>
 				</ul>
 				<div class="m_formation_container">
-				<img src="images/poudlard.jpg" alt="photo de Poudlard" class="poudlard">
+					<img src="images/poudlard.png" alt="photo de Poudlard" class="poudlard">
 				</div>
 			</div>
 
 			<div class="m_bloc m_bloc1">
-				<h2>Hobbies</h2>
-				<ul>
-					<li>Magie Noire</li>
-					<li>Recherche de la pierre Philosophale</li>
-					<li>Les serpents</li>
-					<li>Aime organiser des escapes game</li>
-				</ul>
-				<img src="images/panneau1.jpg" alt="photo de Panneau" class="panneau">
+				<div class="m_bloc_title">
+					<h2>Hobbies</h2>
+				</div>
+				<div class="m_bloc_content">
+					<ul>
+						<li>Magie Noire</li>
+						<li>Recherche de la pierre Philosophale</li>
+						<li>Les serpents</li>
+						<li>Aime organiser des escapes game</li>
+					</ul>
+					<img src="images/panneau.png" alt="photo de Panneau" class="panneau">
+				</div>
 		</section>
-		</main>
-</div>
+	</main>
+	<!--	</div>-->
 	<!--Formulaire de contact-->
 
 	<footer>
-		<h2 id="contact">Contact</h2>
-		<div class="formulaire">
-			<input type="email" placeholder="@">
-			<input type="text" placeholder="Nom de l'entreprise">
-			<input type="text" placeholder="06 xx xx xx xx">
-			<textarea placeholder="Votre message"></textarea>
-			<input id="button" type="button" value="Envoi">
+		<div id="fond_footer"><img id="img_fd_footer" src="images/chateau.jpg">
+		</div>
+		<div id="content_footer">
+			<h2 id="contact">Contact</h2>
+			<img src="images/eagle-owl-3068483_960_720.png" alt="hibou" id="img_contact">
+			<form action="formulaire.php" method="post">
+				<div class="formulaire">
+					<input type="email" placeholder="@">
+					<input type="text" placeholder="Chouette & Co">
+					<input type="text" placeholder="06 xx xx xx xx">
+					<textarea placeholder="Votre message"></textarea>
+					<input id="button" type="button" value="Envoi de votre e-bou">
+				</div>
+			</form>
 		</div>
 	</footer>
 </body>
