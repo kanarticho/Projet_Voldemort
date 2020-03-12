@@ -53,7 +53,7 @@ main{
 width: 500px;
 }
 .m_bloc1 .m_bloc_title{
-    float: right;
+    align-items: flex-end;
 }
 .m_bloc_content{
     width: 100%;

@@ -15,7 +15,7 @@
     position: fixed;
     background:rgba(0, 0, 0, 0.8);}
     
-.liens_h a {
+#liens_h a {
     text-decoration: none;
     color: var(--color-text) ;
     display: inline-block;
@@ -23,7 +23,7 @@
     margin: 15px 35px;
 }
 
-.liens_h a:hover{
+#liens_h a:hover{
     color: rgba(222, 235, 165, 0.541);
 }
 
