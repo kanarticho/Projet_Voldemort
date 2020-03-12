@@ -80,12 +80,11 @@
 
 		<!--Phrase intro-->
 		<section class="m_introduction">
-			<div id="intro">En pleine rédemption et ayant fait le tour de mon précédent métier à savoir mage noir à
-				la
-				recherche de l'immortalité, c'est tout naturellement que j'ai décider de me tourner vers le domaine
-				de
+			<div id="intro"><h3><strong>Assistant maternel</strong></h3>En pleine rédemption et ayant fait le tour de mon précédent métier à savoir mage noir à la
+				recherche de l'immortalité, c'est tout naturellement que j'ai décider de me tourner vers le domaine de
 				la petite enfance. Ayant voulu m'occuper de Harry bébé et ayant une fille, je pense avoir toutes les
-				compétences requises pour ce poste.</div>
+				compétences requises pour ce poste.
+			</div>
 		</section>
 		<!--Compétences, Expérience, Formation, Hobbies-->
 		<section id="m_main">
@@ -118,9 +117,10 @@
 					</ul>
 				</div>
 			</div>
+
 			<div class="m_bloc m_bloc1">
 				<div class="m_bloc_title">
-					<h2>Expériences</h2>
+					<h2 id="exp">Expériences</h2>
 				</div>
 				<div class="m_bloc_content">
 					<ul>
@@ -154,7 +154,7 @@
 							</div>
 							<div class="cadre">
 								<figure>
-									<img src="images/kim.jpg" alt="Loulou la Moustache" />
+									<img src="images/louis.jpeg" alt="Loulou la Moustache" />
 									<figcaption>"Formé par Dumbledore, c'est vous dire !"</figcaption>
 								</figure>
 							</div>
@@ -182,7 +182,7 @@
 			</div>
 			<div class="m_bloc">
 				<div class="m_bloc_title">
-					<h2>Formation</h2>
+					<h2 id="format">Formation</h2>
 				</div>
 				<div class="m_bloc_content m_form_txt_img">
 					<div class="m_form_text">
@@ -197,9 +197,10 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="m_bloc m_bloc1">
 				<div class="m_bloc_title">
-					<h2>Hobbies</h2>
+					<h2 id="hobbs">Hobbies</h2>
 				</div>
 				<div class="m_bloc_content m_form_txt_img hobbies">
 					<div class="m_content_hob">
@@ -219,23 +220,28 @@
 	</main>
 	<!--Formulaire de contact-->
 
-	<footer>
-		<div id="fond_footer"><img id="img_fd_footer" src="images/chateau.jpg" alt="chateau">
-		</div>
-		<div id="content_footer">
-			<h2 id="contact">Contact</h2>
-			<img src="images/eagle-owl-3068483_960_720.png" alt="hibou" id="img_contact">
-			<form action="formulaire.php" method="post">
-				<div class="formulaire">
-					<input type="email" placeholder="@">
-					<input type="text" placeholder="Chouette & Co">
-					<input type="text" placeholder="06 xx xx xx xx">
-					<textarea placeholder="Votre message"></textarea>
-					<input id="button" type="button" value="Envoi de votre e-bou">
+	<footer>		
+		
+		<h2 id="contact">Contact</h2>
+		<div class="parchemin_content">			
+            <img src="images/parchemin.jpg" alt="fond parchemin" class="parchemin"></div>
+
+                <div class="content_footer">                   
+                    <form action="formulaire.php" method="post">
+                        <div class="formulaire">
+                            <input type="email" placeholder="@">
+                            <input type="text" placeholder="Chouette & Co">
+                            <input type="text" placeholder="06 xx xx xx xx">
+                            <textarea placeholder="Votre message"></textarea>
+                            <input class="button" type="button" value="Envoi de votre e-bou">
+                        </div>
+                        <img src="images/eagle-owl-3068483_960_720.png" alt="hibou" class="img_contact">
+					</form>
+					
 				</div>
-			</form>
-		</div>
-	</footer>
+				
+            </div>
+    </footer>
 </body>
 
 </html>
