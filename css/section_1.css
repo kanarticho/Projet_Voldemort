@@ -121,6 +121,7 @@
   }
   .coord h2 {
     font-size: 15pt;
+    text-align: center;
   }
   .liens h2 {
     display: none;

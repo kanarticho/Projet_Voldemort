@@ -1,12 +1,13 @@
 #intro {
     max-width: 950px;
-    width: 100%;
+    width: 90%;
     margin: auto;
     border-bottom-style: solid;
     border-width: 2px;
     border-color: var(--color-titre);
-    padding: 15px;
+    padding: 20px;
     text-align: justify ;
+    line-height: 40px;
 }
 .m_introduction{
 
@@ -32,28 +33,28 @@ main{
 }
 
 #m_main li{
+    padding-top: 15px;
+    padding-bottom: 10px;
     list-style: none;
 }
 .m_bloc{
     flex-wrap: wrap;
-    float: right;
     display: flex;
-    align-content: right;
     flex-direction: column;
     margin: 2%;
     width: 100%;
 }
 
 .m_bloc1{
-    float: right;
+    display: flex;
     text-align: right;
     border-radius: 3px;
 }
 .m_bloc_title{
-width: 500px;
+    width: 500px;
 }
 .m_bloc1 .m_bloc_title{
-    align-items: flex-end;
+    align-self: flex-end;
 }
 .m_bloc_content{
     width: 100%;
@@ -62,6 +63,11 @@ width: 500px;
 /* vignettes */
 
 .m_cont_img{
+    background-color: rgba(9,13,12, 0.5);
+    -webkit-box-shadow: 1px 1px 1px 1px var(--color-fond-dark);
+    color: var(--color-text);
+    border-radius: 2px;
+    margin-top: 50px;
     text-align: center;
     align-items: center;
     width: 100%;
@@ -75,8 +81,9 @@ width: 500px;
 .m_vignettes{
     display: flex;
     flex-wrap: wrap;
-    align: center;
+    box-align: center;
     justify-content: space-around;
+    padding: 40px;
 }
 #m_main figure{
 	width: 120px;
@@ -84,11 +91,11 @@ width: 500px;
 }
 
 #m_main figure img{
-    opacity: 0.7;
+    opacity: 0.6;
     filter: sepia(1);
 	border-radius: 50%;
 	width: 100%;
-	height: 100px;
+	height: 120px;
 	object-fit: cover;
 	object-position: center;
 }
@@ -99,27 +106,77 @@ width: 500px;
 }
 
 .poudlard{
-    opacity: 0.3;
+    opacity: 0.6;
     filter: invert();
 }
 .panneau{
-    opacity: 0.3;
+    opacity: 0.6;
     filter: invert();
 }
-.m_formation_container{
-    position: relative;
-    top: 10%;
-    left: 20%; 
-    right: 0;
+.m_form_img{
+    width: 29%;
+}
+.m_form_text{
+    width: 69%;
 }
 figcaption{
     font-size: 16px;
 }
-/*
-@media screen and (max-width: 870px){
+.m_vignettes .cadre{
+    margin-bottom: 25px;
+}
+.m_form_txt_img{
+    display: flex;
+    justify-content: space-between;
+}
 
+.hobbies{
+flex-direction: row-reverse;
+}
+.m_content_hob{
+    width: 50%;
+}
+.m_hob_img{
+    text-align: center;
+    width: 50%;
+    align-self: center;
+}
+.w3-round-xlarge{
+    text-align: left;
+}
+@media screen and (max-width: 870px) {
+    #intro {
+        padding: 10px;
+        line-height: 30px;
+    }
+    .m_form_txt_img{
+        flex-direction:column;
+        align-items: center;
+    }
     .m_bloc{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .m_bloc_title{
+        width: 100%;
+    }
+    figcaption{
+        font-size: 12px;
+    }  
+    #m_main figure{
+        width: 90px;
+        height: 90px;
+    }
+    
+    #m_main figure img{
+        height: 90px;
+    }
+    .m_bloc{
+        align-items: center;
+    }
+    .m_form_img{
         width: 90%;
     }
-} 
-*/
+}    
