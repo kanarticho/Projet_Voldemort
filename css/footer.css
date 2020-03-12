@@ -1,58 +1,136 @@
 footer{
     position: relative;
+    background:#00000080;
+    width: 100%;
+    margin:0;
+    padding:0;
 }
 .formulaire{
     display: flex;
     align-self: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 25%
+    
+    
 }
 #contact{
     text-align: center;
+    padding-bottom: 2%;
+    margin-bottom: auto;
 }
 input[type=search] {
         border: 1px dotted #999;
         -webkit-appearance: none;
 }
 input, textarea, select, button {
-        width : 30%;
+        width : 25%;
         margin: 0;
         box-sizing: border-box;
         margin:auto;
-        font-family: 'UnifrakturMaguntia', cursive;
-        
+        font-family: 'Cinzel Decorative', cursive;
+        font-style: italic;
+        text-align: center;
+        background: none;
+        color: black;
+        font-weight: bold;
+}
 
- }
+input{
+    color:black;
+}
+
  textarea{
     margin-bottom: 16px;
 }
-#img_contact{
-    height: 50%;
-    width: 50%;
-    align-items: center;
-    padding:2% 25% ;
+.img_contact{
+    height: 26%;
+    width: 26%;
+    align-items: bottom;
+    padding:2% 37% ;
 }
-#button{
+.button{
     margin-bottom: 30px;
 }
-#fond_footer{
+.fond_footer{
     position: absolute;
     width: 100%;
     margin: 0;
     top: 0;
-    opacity: 0.5;
+
 }
-#img_fd_footer{
+.img_fd_footer{
     filter: invert();
     width: 100%;
-    
 }
-#content_footer{
+.content_footer{
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 2;
+    
+
 }
-#content_footer h2{
-	 border-bottom: none;
+.content_footer h2{
+    border-bottom: none;
 }
+.parchemin_content{
+   position: relative;
+   text-align: center;
+   padding-top: 3%;
+   opacity: none;
+   z-index: 2;
+   padding-bottom: 2%;
+}
+
+.parchemin{
+    border-radius: 10%;
+
+}
+
+@media screen and (max-width: 1450px){
+    .formulaire{
+        padding-top: 28%;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .formulaire{
+        padding-top: 33%;
+    }
+}
+@media screen and (max-width: 990px){
+    .formulaire{
+        padding-top: 41%;
+    }
+}
+@media screen and (max-width: 744px){
+    .formulaire{
+        padding-top: 48%;
+    }
+    input, textarea{
+        width: 35%;
+    }
+}
+@media screen and (max-width:  610px){
+    .formulaire{
+        padding-top: 56%;
+    }
+    input, textarea{
+        width: 40%;
+    }
+    .img_contact{
+        display: none;
+    }
+
+ @media screen and (max-width:  510px){
+    .formulaire{
+          padding-top: 68%;
+     }
+    input, textarea{
+          width: 50%;
+    }
+      .img_contact{
+          display: none;
+      }
+    }
