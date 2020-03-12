@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto|Viaoda+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Mountains+of+Christmas|Spectral+SC|UnifrakturMaguntia&display=swap');
+
+/* load WOFF2 font if possible, otherwise WOFF, else use OpenType font */
+
 /*
     font-family: 'Roboto', sans-serif;
 
@@ -15,7 +18,13 @@
 
     font-family: 'Cinzel Decorative', cursive;
 
+@font-face {
+	font-family: "harry";
+	src: url('../font/harryp__-webfont.woff');
+}
 */
+
+
 @import 'header.css';
 @import 'section_1.css';
 @import 'section_2_3.css';
@@ -36,19 +45,19 @@
     --little_screen:870px;
 }
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'lato', sans-serif;
     color: var(--color-text);
 	font-size: 14pt;
     margin: 0;
-}
-body{
     background-image: url('../images/fd.jpg');
-		background-attachment: fixed;
+	background-attachment: fixed;
 }
 
 h1 {
+		color: var(--color-title);
+		opacity: 0.9;
 		font-size: 50pt;
-		font-family: 'Cinzel Decorative', cursive;
+		font-family: 'Cinzel Decorative', cursive; 
 		text-transform: uppercase;
 }
 h2{
@@ -59,10 +68,16 @@ h2{
 	 width: 100%;
     }
 
-.fd_bright{
+/*.fd_bright{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.288);
-}
+}*/
 #m_main, .m_introduction{
 	font-size: var(--text_content_size);
 }
+@font-face {
+	font-family: 'harryp';
+	src: url(../font/harryp__-webfont.woff2) format("woff2"),
+		 url(../font/harryp__-webfont.woff) format("woff"),
+		 url(../font/HARRYP__.TTF) format("opentype");
+  }
