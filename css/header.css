@@ -23,7 +23,7 @@
     
 }
 
-a {
+.nav_liens {
     text-decoration: none;
     color: var(--color-text) ;
     display: inline-block;
@@ -31,7 +31,7 @@ a {
     margin: 15px 35px;
 }
 
-a:hover{
+.nav_liens:hover{
     color: rgba(222, 235, 165, 0.541);
 }
 

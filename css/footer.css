@@ -6,6 +6,7 @@ footer{
 .formulaire{
     display: flex;
     align-self: center;
+    align-items: center;
     flex-direction: column;    
     
 }
