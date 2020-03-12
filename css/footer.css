@@ -15,10 +15,13 @@ input[type=search] {
         -webkit-appearance: none;
 }
 input, textarea, select, button {
-        width : 50%;
+        width : 30%;
         margin: 0;
         box-sizing: border-box;
         margin:auto;
+        font-family: 'UnifrakturMaguntia', cursive;
+        
+
  }
  textarea{
     margin-bottom: 16px;
@@ -42,6 +45,7 @@ input, textarea, select, button {
 #img_fd_footer{
     filter: invert();
     width: 100%;
+    
 }
 #content_footer{
     position: absolute;

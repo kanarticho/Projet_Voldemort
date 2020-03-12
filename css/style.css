@@ -44,6 +44,11 @@
 	--margin-lg: calc(var(--margin) * 2);
     --little_screen:870px;
 }
+
+html{
+	scroll-behavior: smooth;
+}
+
 body {
     font-family: 'lato', sans-serif;
     color: var(--color-text);
