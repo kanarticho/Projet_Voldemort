@@ -50,6 +50,23 @@ label {
     left: 20%; 
     right: 0;
 }
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 2px; /* Add top padding */
+  padding-bottom: 2px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: rgb(13, 94, 15);} Green 
 @media screen and (max-width: 870px){
 
     .m_bloc{
