@@ -1,0 +1,188 @@
+#intro {
+    max-width: 950px;
+    width: 90%;
+    margin: auto;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: var(--color-titre);
+    padding: 20px;
+    text-align: justify ;
+    line-height: 40px;
+}
+.m_introduction{
+
+    width: 100%;
+    margin: auto;
+    align-content: center;
+}
+main{
+    padding-top: 50px;
+}
+#m_main{
+    max-width: 1200px;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#m_main ul{
+    padding-left: 5px;
+    padding-right: 5px;
+    align-content: space-between;
+}
+
+#m_main li{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+.m_bloc{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    width: 100%;
+}
+
+.m_bloc1{
+    display: flex;
+    text-align: right;
+    border-radius: 3px;
+}
+.m_bloc_title{
+    width: 500px;
+}
+.m_bloc1 .m_bloc_title{
+    align-self: flex-end;
+}
+.m_bloc_content{
+    width: 100%;
+}
+
+/* vignettes */
+
+.m_cont_img{
+    background-color: rgba(9,13,12, 0.5);
+    -webkit-box-shadow: 1px 1px 1px 1px var(--color-fond-dark);
+    color: var(--color-text);
+    border-radius: 2px;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.m_ss_titre_vignettes{
+    width: 100%;
+}
+.m_vignettes{
+    display: flex;
+    flex-wrap: wrap;
+    box-align: center;
+    justify-content: space-around;
+    padding: 40px;
+}
+#m_main figure{
+	width: 140px;
+	height: 140px;
+}
+#m_main figure img{
+    opacity: 0.6;
+    filter: sepia(1);
+	border-radius: 50%;
+	width: 100%;
+	height: 140px;
+	object-fit: cover;
+	object-position: center;
+}
+#m_main figure img:hover{
+    opacity: 1;
+    filter: sepia(0);
+    transition:1s;
+}
+.poudlard{
+    width: 300px;
+    opacity: 0.6;
+   filter: invert();
+}
+.panneau{
+    width: 300px;
+    opacity: 0.6;
+    filter: invert();
+}
+.m_form_img{
+    width: 29%;
+}
+.m_form_text{
+    width: 69%;
+}
+figcaption{
+    font-size: 16px;
+}
+.m_vignettes .cadre{
+    margin-bottom: 50px;
+}
+.m_form_txt_img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hobbies{
+flex-direction: row-reverse;
+}
+.m_content_hob{
+    width: 50%;
+}
+.m_hob_img{
+    text-align: center;
+    width: 50%;
+    align-self: center;
+}
+.w3-round-xlarge{
+    text-align: left;
+}
+@media screen and (max-width: 870px) {
+    #intro {
+        padding: 10px;
+        line-height: 30px;
+    }
+    .m_form_txt_img{
+        flex-direction:column;
+        align-items: center;
+    }
+    .m_bloc{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .m_bloc_title{
+        width: 100%;
+    }
+    figcaption{
+        font-size: 12px;
+    }  
+    #m_main figure{
+        width: 90px;
+        height: 90px;
+    }
+    
+    #m_main figure img{
+        height: 90px;
+    }
+    .m_bloc{
+        align-items: center;
+    }
+    .m_form_img{
+        width: 90%;
+    }
+    .poudlard{
+        width: 300px;
+    }
+    .panneau{
+        width: 300px;
+    }
+    
+}    

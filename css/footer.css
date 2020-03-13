@@ -1,0 +1,148 @@
+footer{
+    position: relative;
+    background:#00000080;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+.formulaire{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25%
+}
+#contact{
+    text-align: center;
+    padding-bottom: 2%;
+    margin-bottom: auto;
+}
+input[type=search] {
+        border: 2px dotted #999;
+        -webkit-appearance: none;
+}
+input, textarea, select, button {
+        border-color: var(--color-fond-dark);
+        width : 90%;
+        margin: 0;
+        box-sizing: border-box;
+        margin:auto;
+        font-family: 'Viaoda Libre', cursive;
+        font-style: italic;
+        text-align: left;
+        background: none;
+        color: black;
+        font-weight: bold;/*
+        -webkit-appearance: none;*/
+}
+
+input, textarea, select {
+    border-style:solid;
+    border-top-width:0;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+.button{
+    text-align: right;
+    border-bottom-width: 0;
+}
+
+input{
+    color:black;
+}
+
+ textarea{
+    margin-bottom: 16px;
+}
+.img_contact{
+    height: 26%;
+    width: 26%;
+    align-items: bottom;
+    padding:2% 37% ;
+}
+.button{
+    margin-bottom: 30px;
+}
+.fond_footer{
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    top: 0;
+
+}
+.img_fd_footer{
+    filter: invert();
+    width: 100%;
+}
+.content_footer{
+    max-width: 600px;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    background-image: url(../images/parchemin.jpg);
+    background-size: cover;
+    width: 90%;
+}
+.content_footer h2{
+    border-bottom: none;
+}
+.parchemin_content{
+    width : 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.parchemin{
+    border-radius: 10%;
+
+}
+#contact{
+    padding-top: 15px;
+    border-bottom: none;
+}
+/*
+@media screen and (max-width: 1450px){
+    .formulaire{
+        padding-top: 28%;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .formulaire{
+        padding-top: 33%;
+    }
+}
+@media screen and (max-width: 990px){
+    .formulaire{
+        padding-top: 41%;
+    }
+}
+@media screen and (max-width: 744px){
+    .formulaire{
+        padding-top: 48%;
+    }
+    input, textarea{
+        width: 35%;
+    }
+}
+@media screen and (max-width:  610px){
+    .formulaire{
+        padding-top: 56%;
+    }
+    input, textarea{
+        width: 40%;
+    }
+    .img_contact{
+        display: none;
+    }
+
+ @media screen and (max-width:  510px){
+    .formulaire{
+          padding-top: 68%;
+     }
+    input, textarea{
+          width: 50%;
+    }
+      .img_contact{
+          display: none;
+      }
+    }*/

@@ -1,33 +1,81 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto|Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Mountains+of+Christmas|Spectral+SC|UnifrakturMaguntia&display=swap');
 
- /*
+/* load WOFF2 font if possible, otherwise WOFF, else use OpenType font */
+
+/*
     font-family: 'Roboto', sans-serif;
 
     font-family: 'Lato', sans-serif;
 
     font-family: 'Viaoda Libre', cursive;
 
+    font-family: 'UnifrakturMaguntia', cursive;
+
+    font-family: 'Spectral SC', serif;
+
+    font-family: 'Mountains of Christmas', cursive;
+
+    font-family: 'Cinzel Decorative', cursive;
 
 */
+
+
 @import 'header.css';
 @import 'section_1.css';
 @import 'section_2_3.css';
 @import 'footer.css';
 
-*{
+:root {
 	--color-fond-dark:#090d0c;
 	--color-name:#7aac87;
 	--color-titre:#d3fedc;
-	--color-text:#f1fef6;
+    --color-text:#f1fef6;
+    --text_content_size:25px;
+    --text_content_size-sm:15px;
+	--padding-sm: calc(var(--padding) / 2);
+	--padding-lg: calc(var(--padding) * 2);
+	--padding: 16px;
+	--margin-sm: calc(var(--margin) / 2);
+	--margin: 50px;
+	--margin-lg: calc(var(--margin) * 2);
+    --little_screen:870px;
 }
 
-h1{
-    font-family: 'Viaoda Libre', cursive;
+html{
+	scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'lato', sans-serif;
+    color: var(--color-text);
+	font-size: 14pt;
+    margin: 0;
+    background-image: url('../images/fd.jpg');
+	background-attachment: fixed;
+}
+
+h1 {
+		color: var(--color-title);
+		opacity: 0.9;
+		font-size: 50pt;
+		font-family: 'Cinzel Decorative', cursive; 
+		text-transform: uppercase;
+}
 h2{
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Cinzel Decorative', cursive;
+	 color: var(--color-text);
+	 border-bottom: 5px solid var(--color-name);
+	 text-transform: uppercase;
+	 width: 100%;
+    }
+
+#m_main, .m_introduction{
+	font-size: var(--text_content_size);
 }
-p{
-    font-family: 'Lato', sans-serif;
+
+@media screen and (max-width: 870px) {
+	#m_main, .m_introduction{
+		font-size: var(--text_content_size_sm);
+	}
 }

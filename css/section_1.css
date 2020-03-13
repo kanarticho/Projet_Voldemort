@@ -1,0 +1,156 @@
+/*@import "style.css";*/
+
+#i_intro {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14pt;
+}
+
+.coord {
+  margin-left: var(--margin);
+  padding-top: var(--margin);
+}
+
+.liens {
+  margin-right: var(--margin);
+  padding-top: var(--margin);
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  text-align: right;
+}
+
+.nom {
+  text-align: center;
+  width: 40%;
+  padding: var(--padding-lg);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nom img {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.list-address {
+  list-style: none;
+  padding: 0;
+}
+
+.coord-logo {
+  display: flex;
+  align-items: center;
+}
+
+.i_liens img,
+.coord-logo img {
+  width: 50px;
+  filter: invert();
+  padding: var(--padding);
+}
+
+.i_liens img {
+  padding-bottom: 0;
+  padding-right: 0;
+}
+
+.coord-logo img {
+  padding-left: 0;
+}
+
+.i_liens {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.i_liens .i_hover {
+  display:none;
+  width: 50px;
+}
+
+.i_liens:hover .i_hover {
+  display: inline;
+  filter: invert();
+  padding-right: 25px;
+}
+
+.i_liens:hover .i_nothover {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .coord,
+  .liens {
+    font-size: 14pt;
+  }
+  .liens {
+    margin-right: var(--margin);
+  }
+  .liens h2 {
+    font-size: 20pt;
+  }
+  .nom img {
+    width: 300px;
+    height: 300px;
+  }
+  .nom h1 {
+    font-size: 30pt;
+  }
+  .coord {
+    margin-left: var(--margin-sm);
+  }
+  .i_liens img,
+  .coord-logo img {
+    width: 30px;
+    padding: var(--padding-sm);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  #i_intro {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nom h1 {
+    font-size: 20pt;
+  }
+  .coord h2 {
+    font-size: 15pt;
+    text-align: center;
+  }
+  .liens h2 {
+    display: none;
+  }
+  .i_liens p {
+    display: none;
+  }
+  .liens {
+    /*display: none;*/
+    order: 3;
+    flex-direction: row;
+    padding-top: 0;
+    justify-content: center;
+    margin: var(--margin-sm);
+  }
+  .i_liens img {
+    width: 60px;
+  }
+  .nom {
+    width: 100%;
+    padding-bottom: 0;
+    order: 1;
+  }
+  .coord {
+    order: 2;
+  }
+
+  .coord h2 {
+    margin-top: 0;
+  }
+
+}
