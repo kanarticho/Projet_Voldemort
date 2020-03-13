@@ -11,8 +11,6 @@ footer{
     align-items: center;
     flex-direction: column;
     padding-top: 25%
-    
-    
 }
 #contact{
     text-align: center;
@@ -20,20 +18,33 @@ footer{
     margin-bottom: auto;
 }
 input[type=search] {
-        border: 1px dotted #999;
+        border: 2px dotted #999;
         -webkit-appearance: none;
 }
 input, textarea, select, button {
-        width : 25%;
+        border-color: var(--color-fond-dark);
+        width : 90%;
         margin: 0;
         box-sizing: border-box;
         margin:auto;
-        font-family: 'Cinzel Decorative', cursive;
+        font-family: 'Viaoda Libre', cursive;
         font-style: italic;
-        text-align: center;
+        text-align: left;
         background: none;
         color: black;
-        font-weight: bold;
+        font-weight: bold;/*
+        -webkit-appearance: none;*/
+}
+
+input, textarea, select {
+    border-style:solid;
+    border-top-width:0;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+.button{
+    text-align: right;
+    border-bottom-width: 0;
 }
 
 input{
@@ -64,23 +75,20 @@ input{
     width: 100%;
 }
 .content_footer{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-    
-
+    max-width: 600px;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    background-image: url(../images/parchemin.jpg);
+    background-size: cover;
+    width: 90%;
 }
 .content_footer h2{
     border-bottom: none;
 }
 .parchemin_content{
-   position: relative;
-   text-align: center;
-   padding-top: 3%;
-   opacity: none;
-   z-index: 2;
-   padding-bottom: 2%;
+    width : 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .parchemin{
@@ -91,7 +99,7 @@ input{
     padding-top: 15px;
     border-bottom: none;
 }
-
+/*
 @media screen and (max-width: 1450px){
     .formulaire{
         padding-top: 28%;
@@ -137,4 +145,4 @@ input{
       .img_contact{
           display: none;
       }
-    }
+    }*/

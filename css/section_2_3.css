@@ -77,7 +77,6 @@ main{
 .m_ss_titre_vignettes{
     width: 100%;
 }
-
 .m_vignettes{
     display: flex;
     flex-wrap: wrap;
@@ -86,16 +85,15 @@ main{
     padding: 40px;
 }
 #m_main figure{
-	width: 120px;
-	height: 120px;
+	width: 140px;
+	height: 140px;
 }
-
 #m_main figure img{
     opacity: 0.6;
     filter: sepia(1);
 	border-radius: 50%;
 	width: 100%;
-	height: 120px;
+	height: 140px;
 	object-fit: cover;
 	object-position: center;
 }
@@ -104,12 +102,13 @@ main{
     filter: sepia(0);
     transition:1s;
 }
-
 .poudlard{
+    width: 300px;
     opacity: 0.6;
-    filter: invert();
+   filter: invert();
 }
 .panneau{
+    width: 300px;
     opacity: 0.6;
     filter: invert();
 }
@@ -179,4 +178,11 @@ flex-direction: row-reverse;
     .m_form_img{
         width: 90%;
     }
+    .poudlard{
+        width: 300px;
+    }
+    .panneau{
+        width: 300px;
+    }
+    
 }    
