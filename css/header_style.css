@@ -1,11 +1,15 @@
-.navbar{    color: var(--color-text);
-    height: 70px;
+
+.navbar{
+    color: var(--color-text);
+    height: 60px;
     background:rgba(0, 0, 0, 0.8);
     justify-content: space-around;
-    font-size: 24px;
-    font-family: 'UnifrakturMaguntia', cursive;;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
     position: fixed;
     z-index: 3;
+    padding: 0;
+    margin: 0;
 }
 
 .menu_burger {
@@ -18,18 +22,18 @@
     display: flex;
     justify-content: space-around;
     position: fixed;
-    background:rgba(0, 0, 0, 0.8);}
+    background: rgba(193, 190, 183, 0.25);}
     
 #liens_h a {
     text-decoration: none;
     color: var(--color-text) ;
     display: inline-block;
     justify-content: space-around;
-    margin: 15px 35px;
+    margin: 13px 23px;
 }
 
 #liens_h a:hover{
-    color: rgba(222, 235, 165, 0.541);
+    color: rgba(31, 28, 25, 0.84);
 }
 
 @media screen and (max-width: 870px){
@@ -40,15 +44,19 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        position: fixe;
+        position: fixed;
         height: 100%;
         width: 40%;
-        background: rgba(0, 0, 0, 0.562);    }
+        background: rgba(176, 176, 176, 0.56);    }
      .nav_liens{
         color: var(--color-text);
-        text-align: center;     }    .menu_burger {
+        text-align: center;     }
+
+    .menu_burger {
         display: block;
-        font-size: 35px;    }
+        font-size: 35px;
+        margin: 10px;
+    }
     .navbar{
         justify-content: right;
     }

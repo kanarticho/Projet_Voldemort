@@ -1,7 +1,7 @@
 .w3-round-small{border-radius:2px}.w3-round,.w3-round-medium{border-radius:4px}.w3-round-large{border-radius:8px}.w3-round-xlarge{border-radius:16px}.w3-round-xxlarge{border-radius:16px}
 .w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
 .w3-container,.w3-panel{font-size: 20px;padding:0.01em 14px}.w3-panel{margin-top:16px;margin-bottom:16px}
-.w3-green,.w3-hover-green:hover{color:rgb(13, 24, 12)!important;background-color:rgba(116, 168, 117, 1)!important}
+.w3-green,.w3-hover-green:hover{color:rgb(13, 24, 12)!important;background-color:var(--color-name)!important}
 .w3-round-small{border-radius:2px}.w3-round,.w3-round-medium{border-radius:4px}.w3-round-large{border-radius:8px}.w3-round-xlarge{border-radius:16px}.w3-round-xxlarge{border-radius:16px}
 .w3-round{
     padding-top: 20px;;

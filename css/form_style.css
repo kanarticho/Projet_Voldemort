@@ -1,6 +1,8 @@
-footer{
+.endofpage{
     position: relative;
-    background:#00000080;
+    background: url("../images/abc.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 100%;
     margin:0;
     padding:0;
@@ -10,7 +12,8 @@ footer{
     align-self: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 25%
+    padding-top: 25%;
+    padding-bottom: 6%;
 }
 #contact{
     text-align: center;
@@ -27,7 +30,6 @@ input, textarea, select, button {
         margin: 0;
         box-sizing: border-box;
         margin:auto;
-        font-family: 'Viaoda Libre', cursive;
         font-style: italic;
         text-align: left;
         background: none;
@@ -63,25 +65,8 @@ input{
 .button{
     margin-bottom: 30px;
 }
-.fond_footer{
-    position: absolute;
-    width: 100%;
-    margin: 0;
-    top: 0;
 
-}
-.img_fd_footer{
-    filter: invert();
-    width: 100%;
-}
-.content_footer{
-    max-width: 600px;
-    padding-bottom: 150px;
-    padding-top: 150px;
-    background-image: url(../images/parchemin.jpg);
-    background-size: cover;
-    width: 90%;
-}
+
 .content_footer h2{
     border-bottom: none;
 }

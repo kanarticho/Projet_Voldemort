@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto|Viaoda+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Mountains+of+Christmas|Spectral+SC|UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
 /* load WOFF2 font if possible, otherwise WOFF, else use OpenType font */
 
@@ -18,21 +19,23 @@
 
     font-family: 'Cinzel Decorative', cursive;
 
+font-family: 'Playfair Display', serif;
 */
 
 
-@import 'header.css';
-@import 'section_1.css';
-@import 'section_2_3.css';
-@import 'footer.css';
+@import 'header_style.css';
+@import 'intro_style.css';
+@import 'section_2_3_style.css';
+@import 'form_style.css';
+@import 'footer_style.css';
 
 :root {
 	--color-fond-dark:#090d0c;
-	--color-name:#7aac87;
-	--color-titre:#d3fedc;
-    --color-text:#f1fef6;
+	--color-name: #776d62;
+	--color-titre: #262429;
+    --color-text: #5a5a5a;
     --text_content_size:25px;
-    --text_content_size-sm:15px;
+    --text_content_size_sm:15px;
 	--padding-sm: calc(var(--padding) / 2);
 	--padding-lg: calc(var(--padding) * 2);
 	--padding: 16px;
@@ -51,19 +54,19 @@ body {
     color: var(--color-text);
 	font-size: 14pt;
     margin: 0;
-    background-image: url('../images/fd.jpg');
+    background-image: url('../images/fd4.jpg');
 	background-attachment: fixed;
 }
 
 h1 {
-		color: var(--color-title);
+		color: var(--color-titre);
 		opacity: 0.9;
 		font-size: 50pt;
-		font-family: 'Cinzel Decorative', cursive; 
+		font-family: 'Playfair Display', serif;
 		text-transform: uppercase;
 }
 h2{
-   font-family: 'Cinzel Decorative', cursive;
+	font-family: 'Playfair Display', serif;
 	 color: var(--color-text);
 	 border-bottom: 5px solid var(--color-name);
 	 text-transform: uppercase;

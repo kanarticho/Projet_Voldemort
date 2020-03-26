@@ -1,6 +1,43 @@
+.jeteste {
+  background: url("../images/abc.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+
+  padding: 50px;
+  margin: 0;
+
+}
+
+.tentativeflex {
+  display: flex;
+  z-index: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testing{
+  font-family: 'Playfair Display', serif;
+}
+
+.testing img {
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  object-position: center;
+  vertical-align: center;
+
+
+}
+
+.intro{
+  margin-top: 50px;
+}
+/*
+
 /*@import "style.css";*/
 
-#i_intro {
+/*#i_intro {
   display: flex;
   justify-content: space-around;
   font-size: 14pt;
@@ -43,13 +80,13 @@
 
 .coord-logo {
   display: flex;
-  align-items: center;
+  align-items: center;;
 }
 
 .i_liens img,
 .coord-logo img {
   width: 50px;
-  filter: invert();
+  filter: invert(60%);
   padding: var(--padding);
 }
 
@@ -76,7 +113,7 @@
 .i_liens:hover .i_hover {
   display: inline;
   filter: invert();
-  padding-right: 25px;
+  padding-right: 16px;
 }
 
 .i_liens:hover .i_nothover {
@@ -130,27 +167,48 @@
     display: none;
   }
   .liens {
-    /*display: none;*/
+    /*display: none;    ici la fin
     order: 3;
     flex-direction: row;
     padding-top: 0;
     justify-content: center;
     margin: var(--margin-sm);
   }
+
+
   .i_liens img {
     width: 60px;
   }
+
+
   .nom {
     width: 100%;
     padding-bottom: 0;
     order: 1;
   }
+
+
+
   .coord {
     order: 2;
   }
+
+
+
+
+
+
+
 
   .coord h2 {
     margin-top: 0;
   }
 
-}
+
+ */
+
+
+
+
+
+

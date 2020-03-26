@@ -1,4 +1,4 @@
-#intro {
+.intro {
     max-width: 950px;
     width: 90%;
     margin: auto;
@@ -104,13 +104,9 @@ main{
 }
 .poudlard{
     width: 300px;
-    opacity: 0.6;
-   filter: invert();
 }
 .panneau{
     width: 300px;
-    opacity: 0.6;
-    filter: invert();
 }
 .m_form_img{
     width: 29%;
