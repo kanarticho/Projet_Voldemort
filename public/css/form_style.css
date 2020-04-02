@@ -12,30 +12,44 @@
     align-self: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 25%;
-    padding-bottom: 6%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
 }
+
+.validform{
+    padding: 20px;
+    color: var(--color-titre);
+    font-weight: bold;
+}
+
+
 #contact{
     text-align: center;
     padding-bottom: 2%;
     margin-bottom: auto;
 }
+
+input{
+    width: 200px;
+}
+
 input[type=search] {
         border: 2px dotted #999;
         -webkit-appearance: none;
 }
 input, textarea, select, button {
-        border-color: var(--color-fond-dark);
-        width : 90%;
+        border-color: var(--color-text);
+        width : 150px;
         margin: 0;
+
         box-sizing: border-box;
         margin:auto;
         font-style: italic;
         text-align: left;
         background: none;
-        color: black;
-        font-weight: bold;/*
-        -webkit-appearance: none;*/
+
+
 }
 
 input, textarea, select {
@@ -45,38 +59,31 @@ input, textarea, select {
     border-left-width: 0;
 }
 .button{
-    text-align: right;
+    align-content: center;
     border-bottom-width: 0;
-}
-
-input{
-    color:black;
-}
-
- textarea{
-    margin-bottom: 16px;
-}
-.img_contact{
-    height: 26%;
-    width: 26%;
-    align-items: bottom;
-    padding:2% 37% ;
-}
-.button{
     margin-bottom: 30px;
 }
 
 
-.content_footer h2{
+
+
+
+/*.img_contact{
+    height: 26%;
+    width: 26%;
+    align-items: bottom;
+    padding:2% 37% ;
+} */
+
+
+
+
+/*.content_footer h2{
     border-bottom: none;
 }
-.parchemin_content{
-    width : 100%;
-    display: flex;
-    justify-content: center;
-}
 
-.parchemin{
+
+ /* .parchemin{
     border-radius: 10%;
 
 }

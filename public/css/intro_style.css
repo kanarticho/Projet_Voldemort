@@ -3,8 +3,9 @@
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
-
-  padding: 50px;
+  height: 400px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin: 0;
 
 }
@@ -30,9 +31,28 @@
 
 }
 
-.intro{
+.intro {
   margin-top: 50px;
 }
+
+@media screen and (max-width: 870px) {
+
+  .tentativeflex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  h1 {
+    font-size: 20pt;
+  }
+
+  h2 {
+    font-size: 15pt;
+    text-align: center;
+  }
+}
+
 /*
 
 /*@import "style.css";*/

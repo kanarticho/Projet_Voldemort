@@ -1,3 +1,8 @@
+<?php
+require'../src/database.php';
+//var_dump($pdo);
+ ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,12 +11,12 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="css/W3S_plus.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Curriculum Vitae</title>
+	<title>Marine Eugénie, Développeur Web</title>
 </head>
 
 <body>
 	<?php
-include ("header.php");
+include("header.php");
 	?>
 
 	<main>
@@ -30,6 +35,7 @@ include("intro.php");
 				<div class="m_bloc_title">
 					<h2>Compétences</h2>
 				</div>
+                <!--
 				<div class="m_bloc_content">
 					<ul>
 						<li>PHP
@@ -48,13 +54,48 @@ include("intro.php");
 						<div class="w3-round">
 							<div class="w3-container w3-green w3-round-xlarge" style="width:85%">J'étais adulé !</div>
 						</div></li>
-						<!-- <li>Savoir identifier les besoins de l'enfant
+						 <li>Savoir identifier les besoins de l'enfant
 						<div class="w3-round">
 							<div class="w3-container w3-green w3-round-xlarge" style="width:5%">...</div>
 						</div></li> -->
-					</ul>
-				</div>
+
+
 			</div>
+
+            <?php
+
+            $query = 'SELECT * FROM mycomp';
+            $statement = $pdo->query($query);
+            $abilities = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+            //var_dump($abilities);
+/*
+            $abilities = [
+                ['competence'=>'HTML5', 'icone'=>'html5.png'],
+                ['competence'=>'CSS3', 'icone'=>'CSS3.png'],
+                ['competence'=>'PHP', 'icone'=>'php.png'],
+                ['competence'=>'Symfony', 'icone'=>'symfony.png'],
+                ['competence'=>'MySQL', 'icone'=>'mysql.png'],
+                ['competence'=>'Anglais', 'icone'=>'drap.png'],
+
+            ]; */
+            ?>
+
+            <div class="mycomp">
+                <?php foreach ($abilities as $ability): { ?>
+                <figure>
+                    <img src="images/<?php echo $ability['image'] ?>" alt="<?php echo $ability['competence'] ?>"
+                         <figcaption>
+                             <?php echo $ability['competence'] ?>
+                         </figcaption>
+                </figure>
+                <?php } ?>
+                <?php endforeach; ?>
+
+            </div>
+
+
+
 
 			<div class="m_bloc m_bloc1">
 				<div class="m_bloc_title">
@@ -64,31 +105,24 @@ include("intro.php");
 
 				<div class="m_bloc_content">
                     <?php
-                    $experiences = [
-                        'Chargée d\'accueil' => [
-                            'employeur'=> 'Hôtel Groslot',
-                            'contrat'=> 'CDD',
-                            'annee' => 'Avril 2017 à Mai 2018',
-                            'missions' => 'ajouter missions',
-                        ],
-                        'Assistante relations internationales' => [
-                            'employeur'=>'Mairie d\'Orléans',
-                            'contrat'=>'CDD',
-                            'annee'=>'Mai 2018 à Octobre 2018',
-                            'missions' => 'ajouter missions',
-
-                        ],
-
+                   $jobs = [
+                        ['experience'=>'Assistante relations internationales à la Mairie d\'Orléans, CDD de Mai 2018 à Octobre 2018', 'missions'=>'Organisation des réunions, traduction, interprétariat, organisation de réceptions officielles, appui technique sur les manifestations internationales,...'],
+                        ['experience'=>'Chargée d\'Accueil à l\'Hôtel Groslot d\'Orléans, CDD d\'Avril 2017 à Mai 2018','missions'=> 'Accueil de visiteurs, visites guidées bilingues, gestion de caisse, gardiennage'],
                     ];
 
-                    foreach($experiences as $job => $typeOfDetails ) ?>
-                    <?= $job  ?>
-                    <ul>
-                        <?php foreach($typeOfDetails as $details) : ?>
-                        <li><?= $details ?></li>
+                    ?>
 
+                    <ul>
+                        <?php foreach ($jobs as $job): { ?>
+                            <h3> <?= $job['experience'] ?></h3>
+                                <li><?= $job['missions']; ?></li>
+                        <?php } ?>
+                        <?php endforeach; ?>
                     </ul>
-                <?php endforeach; ?>
+
+
+
+
                     <!--
 					<div class="m_cont_img">
 						<div class="m_ss_titre_vignettes">
@@ -155,10 +189,9 @@ include("intro.php");
 				<div class="m_bloc_content m_form_txt_img">
 					<div class="m_form_text">
                        <?php $formations = [
+                               2020 => 'Formation PHP à la Wild Code School d\'Orléans',
                         '2013 à 2017'=> 'Licence de Langues Etrangères Appliquées à l\'Université d\'Orléans',
-                        2020 => 'Formation PHP à la Wild Code School d\'Orléans',
                         ]; ?>
-
 						<ul>
                             <?php foreach ($formations as $formName => $date) : ?>
 							<li><?= $formName . ' : ' . $date ?></li>
@@ -178,22 +211,30 @@ include("intro.php");
 				<div class="m_bloc_content m_form_txt_img hobbies">
 					<div class="m_content_hob">
                         <?php
+
                         $hobbies = [
-                            'Voyages',
-                            'Jeux vidéos',
-                            'Littérature étrangère',
-                            'Films',
-                        ];?>
-						<ul>
-							<li><?= $hobbies[0] ?></li>
-							<li><?= $hobbies[1] ?></li>
-							<li><?= $hobbies[2] ?></li>
-							<li><?= $hobbies[3] ?></li>
-						</ul>
+                ['hobbie'=>'Voyages', 'icone'=>'plane.png'],
+                ['hobbie'=>'Jeux vidéos', 'icone'=>'game.png'],
+                ['hobbie'=>'Littérature', 'icone'=>'book.png'],
+                ['hobbie'=>'Films', 'icone'=>'movie.png'],
+
+
+            ];
+            ?>
+
+                            <?php foreach ($hobbies as $hobby): { ?>
+                            <figure>
+                                <img src="images/<?php echo $hobby['icone'] ?>" alt="<?php echo $hobby['hobbie'] ?>"
+                                <figcaption>
+                                    <?php echo $hobby['hobbie'] ?>
+                                </figcaption>
+                            </figure>
+                            <?php } ?>
+                <?php endforeach; ?>
+
+
 					</div>
-					<div class="m_hob_img">
-						<img src="images/movie.png" alt="clap de film" class="panneau">
-					</div>
+
 				</div>
 			</div>
 		</section>
@@ -201,12 +242,12 @@ include("intro.php");
 
     <?php
 
-    include ("form.php");
+    include("form.php");
     ?>
 <footer>
 
     <?php
-    include ("footer.php")
+    include("footer.php")
     ?>
 
 </footer>

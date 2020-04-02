@@ -2,7 +2,7 @@
 .navbar{
     color: var(--color-text);
     height: 60px;
-    background:rgba(0, 0, 0, 0.8);
+    background: rgba(193, 190, 183, 0.25);
     justify-content: space-around;
     font-size: 18px;
     font-family: 'Playfair Display', serif;
@@ -46,7 +46,7 @@
         flex-direction: column;
         position: fixed;
         height: 100%;
-        width: 40%;
+        width: 50%;
         background: rgba(176, 176, 176, 0.56);    }
      .nav_liens{
         color: var(--color-text);
@@ -55,7 +55,7 @@
     .menu_burger {
         display: block;
         font-size: 35px;
-        margin: 10px;
+        margin: 16px;
     }
     .navbar{
         justify-content: right;

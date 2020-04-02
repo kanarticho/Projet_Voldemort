@@ -71,14 +71,32 @@ h2{
 	 border-bottom: 5px solid var(--color-name);
 	 text-transform: uppercase;
 	 width: 100%;
+	font-size: 35pt;
+	padding-top: 90px;
+	margin-bottom: 45px;
     }
+
+h3 {
+	font-size: 20pt;
+
+
+}
 
 #m_main, .m_introduction{
 	font-size: var(--text_content_size);
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 350px) {
 	#m_main, .m_introduction{
 		font-size: var(--text_content_size_sm);
+	}
+
+	h2{
+		font-size: 25pt;
+		display: flex;
+		text-align: center;
+	}
+	h3 {
+		font-size: 17pt;
 	}
 }
